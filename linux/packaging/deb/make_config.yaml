@@ -1,0 +1,13 @@
+display_name: OTA Tool
+package_name: ota-tool
+maintainer:
+  name: TrungNK
+  email: nguyenkientrung0412@gmail.com
+installed_size: 51200
+priority: optional
+section: x11
+categories:
+  - Utility
+keywords:
+  - ADB
+  - OTA

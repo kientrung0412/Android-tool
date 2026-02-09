@@ -14,3 +14,25 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Ubuntu DEB Build (Fastforge)
+
+Install Fastforge CLI:
+
+```bash
+dart pub global activate fastforge
+```
+
+Build Ubuntu `.deb` package:
+
+```bash
+fastforge package --platform=linux --targets=deb
+```
+
+Or run the configured release job:
+
+```bash
+fastforge release --name ubuntu
+```
+
+Build artifacts are generated in `dist/`.
