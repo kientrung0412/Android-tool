@@ -1,0 +1,146 @@
+[
+  {
+    "command": "adb devices",
+    "description": "List connected devices"
+  },
+  {
+    "command": "adb connect",
+    "description": "Connect to device over TCP/IP",
+    "params": "<ip:port>"
+  },
+  {
+    "command": "adb disconnect",
+    "description": "Disconnect a TCP/IP device",
+    "params": "<ip:port>"
+  },
+  {
+    "command": "adb root",
+    "description": "Restart adbd with root permissions"
+  },
+  {
+    "command": "adb remount",
+    "description": "Remount /system and vendor as writable"
+  },
+  {
+    "command": "adb shell",
+    "description": "Start device shell"
+  },
+  {
+    "command": "adb shell pm",
+    "description": "Package manager help"
+  },
+  {
+    "command": "adb shell pm list packages",
+    "description": "List all packages on device"
+  },
+  {
+    "command": "adb shell pm list packages -3",
+    "description": "List third-party packages only"
+  },
+  {
+    "command": "adb shell pm list packages | grep",
+    "description": "Quick grep for package name",
+    "params": "<keyword>"
+  },
+  {
+    "command": "adb shell input text",
+    "description": "Input text on device",
+    "params": "\"<text>\""
+  },
+  {
+    "command": "adb shell input keyevent",
+    "description": "Send key event",
+    "params": "<keycode>"
+  },
+  {
+    "command": "adb shell dumpsys",
+    "description": "Dump system services"
+  },
+  {
+    "command": "adb shell dumpsys",
+    "description": "Dump specific service",
+    "params": "<service>"
+  },
+  {
+    "command": "adb shell getprop",
+    "description": "List all properties"
+  },
+  {
+    "command": "adb shell getprop",
+    "description": "Get specific property",
+    "params": "<property>"
+  },
+  {
+    "command": "adb install",
+    "description": "Install APK",
+    "params": "<apk_path>"
+  },
+  {
+    "command": "adb install -r",
+    "description": "Reinstall/upgrade APK",
+    "params": "<apk_path>"
+  },
+  {
+    "command": "adb uninstall",
+    "description": "Uninstall package",
+    "params": "<package_name>"
+  },
+  {
+    "command": "adb push",
+    "description": "Push file to device",
+    "params": "<local> <remote>"
+  },
+  {
+    "command": "adb pull",
+    "description": "Pull file from device",
+    "params": "<remote> <local>"
+  },
+  {
+    "command": "adb reboot",
+    "description": "Reboot device"
+  },
+  {
+    "command": "adb reboot bootloader",
+    "description": "Reboot device to bootloader"
+  },
+  {
+    "command": "adb reboot recovery",
+    "description": "Reboot device to recovery"
+  },
+  {
+    "command": "fastboot devices",
+    "description": "List devices in fastboot mode"
+  },
+  {
+    "command": "fastboot reboot",
+    "description": "Reboot from fastboot mode"
+  },
+  {
+    "command": "fastboot reboot bootloader",
+    "description": "Reboot to bootloader mode"
+  },
+  {
+    "command": "fastboot flash",
+    "description": "Flash partition image",
+    "params": "<partition> <img>"
+  },
+  {
+    "command": "fastboot boot",
+    "description": "Boot kernel image once",
+    "params": "<img>"
+  },
+  {
+    "command": "fastboot getvar all",
+    "description": "Print all bootloader variables"
+  },
+  {
+    "command": "fastboot erase",
+    "description": "Erase partition",
+    "params": "<partition>"
+  },
+  {
+    "command": "fastboot format",
+    "description": "Format partition",
+    "params": "<partition>"
+  }
+]
